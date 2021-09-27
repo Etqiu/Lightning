@@ -1,5 +1,6 @@
 void setup(){
   size(300,300);
+  strokeWeight(5);
   background(255);
 }
 int x1 = 0;
@@ -8,14 +9,13 @@ int x2 = 0;
 int y2 = 150;
 
 void draw(){
-noStroke();
+
   fill(0,0,0,10);
   rect(0,0,600,600);
   
      
     x2 = x1 + (int)(Math.random()*9);
     y2 = y1 + (int)(Math.random()*18)-9;
-    strokeWeight(5);
     line(x1,y1,x2,y2);
     x1 = x2;
     y1 = y2;
